@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GREYS_BLUE_SHEET</name>
+    <events>
+        <event-block sid="7552133045655423">
+            <conditions>
+                <condition id="2" name="Key is down" sid="4076675148751151" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="180530315722539" type="Enemigo_02">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7133333341207045" type="Enemigo_03">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="995411582305072" type="EnemigoIzq">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7829996067688274" type="Nightmare">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="6341947165617004" type="Fire">
+                    <param id="0" name="Object">Character</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9926424565333394">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5825154454358177" type="System">
+                    <param id="0" name="Interval (seconds)">12</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="8775666889917" type="Enemigo_03" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3844489250096074" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

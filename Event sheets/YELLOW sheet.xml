@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>YELLOW sheet</name>
+    <events>
+        <event-block sid="7697134761892012">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="679743782271489" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="58776973123574" type="DestructiveOnda">
+                    <param id="0" name="Pin to">Character</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="3679008288807659" type="Speed_used">
+                    <param id="0" name="Pin to">Character</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5908948138897809" type="System">
+                    <param id="0" name="Variable">usedTimes</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;used&quot;)</param>
+                </action>
+                <action id="0" name="Play" sid="1766899970548955" type="Musica">
+                    <param id="0" name="Audio file">LevelYellow</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1021504279153896">
+                    <conditions>
+                        <condition id="7" name="Compare key value (as number)" sid="2903074005148469" type="WebStorage">
+                            <param id="0" name="Key">&quot;speed&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="5251864153654681" type="AlmostDead_Teleport" />
+                        <action id="0" name="Spawn another object" sid="2157614738356995" type="Spawner">
+                            <param id="0" name="Object">Fire</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="2846869005348349" type="Fire">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="6489228152128981" type="Spawner">
+                            <param id="0" name="Object">Fire</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="2763713220435485" type="Fire">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="203413055292816" type="Spawner">
+                            <param id="0" name="Object">Fire</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="6755888360394896" type="Fire">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="7923591496393678" type="Spawner">
+                            <param id="0" name="Object">Fire</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">3</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="6897827778232835" type="Fire">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="25330238140543" type="Spawner">
+                            <param id="0" name="Object">Fire</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">4</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="2215400040883384" type="Fire">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6560033321515905" type="Ayuda_speed">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="4212033044311378" title="Character related Behavior5">
+            <sub-events>
+                <event-block sid="1100063310481536">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="6589410635440764" type="Keyboard">
+                            <param id="0" name="Key">32 (Barra Espaciadora)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="7935983305885175" type="Character">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="15692287152415">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1279134647135033" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="6685716351245874" type="Character">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="7774404172941063" type="Character">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="608967119942292">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="969341495259171" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="7783940870648452" type="Character">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="9943139337417532" type="Character">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4466691427178711">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="4826701578764988" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="51073863811416" type="Character">
+                            <param id="0" name="Object">MOD_DOOR</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="6457743207911809" type="System">
+                            <param id="0" name="Layout">3level</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="308433544980286">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="7789933196692139" type="Keyboard">
+                            <param id="0" name="Key">90 (Z)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="2570523821700254" type="Character">
+                            <param id="0" name="Object">Apoyo_01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1280550716413682" type="gap_01">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="120621233730796">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="952527346889033" type="Keyboard">
+                            <param id="0" name="Key">90 (Z)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="3567448358706432" type="Character">
+                            <param id="0" name="Object">Apoyo_02</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1897517108831111" type="convencer_nightmare">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="8406337090526992" type="System">
+                            <param id="0" name="Group name">&quot;Nightmare Behavior&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1984912004871638" title="Dialogo related after spawn6">
+            <sub-events>
+                <event-block sid="456143532358093">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="6904592426452907" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="4117761144586023" type="gap_01">
+                            <param id="0" name="X">Character.ImagePointX(1)</param>
+                            <param id="1" name="Y">Character.ImagePointY(1)</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="6867032439856771" type="convencer_nightmare">
+                            <param id="0" name="X">Character.ImagePointX(1)</param>
+                            <param id="1" name="Y">Character.ImagePointY(1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7689501392132358">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="19562700769338" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="1398548239784521" type="gap_01" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="573766324657367" type="gap_01">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="922731838607972">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="6522003791232315" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="9467109056320266" type="convencer_nightmare" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="777737847138315" type="convencer_nightmare">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1342277635814368">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8873289424228224" type="gap_01">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="821492665938438" type="gap_01" />
+                    </actions>
+                </event-block>
+                <event-block sid="2175220773970775">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="6683704978071019" type="convencer_nightmare">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7256984024362658" type="convencer_nightmare" />
+                        <action id="-15" name="Set visible" sid="7743557949746373" type="nightmare_bueno">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="9238177582531974" type="MOD_DOOR">
+                            <param id="0" name="X">1480</param>
+                            <param id="1" name="Y">437</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="3340315067336463">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="8154333064781857" type="Character">
+                    <param id="0" name="Object">AlmostDead_Teleport</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4604603816712465" type="System">
+                    <param id="0" name="Layout">SUBYELLOWLevel</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="190869186052879" title="MUERTE4">
+            <sub-events>
+                <event-block any="1" sid="7622681207511635">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="5134473437980424" type="Character">
+                            <param id="0" name="Object">Bullet_02</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="6947021627311723" type="Character">
+                            <param id="0" name="Object">Fire</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="2225706672568533" type="Character">
+                            <param id="0" name="Object">night_bull</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="7394676559946081" type="Character">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="2765197770095213" type="Character">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6817164802306748" type="Muerte">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="6630257031863266" type="System">
+                            <param id="0" name="Group name">&quot;Character related Behavior5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8679881148155732">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="2985604148837458" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="7035461344082466" type="Muerte" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="2885925175070503" type="Muerte">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9619198574835391">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9728634491157604" type="Muerte">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="9749178875596763" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="9660788644234575" title="Speed Weapon">
+            <sub-events>
+                <event-block sid="8475753027569736">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="4573065641670557" type="Keyboard">
+                            <param id="0" name="Key">67 (C)</param>
+                        </condition>
+                        <condition id="7" name="Compare key value (as number)" sid="5035147585088973" type="WebStorage">
+                            <param id="0" name="Key">&quot;speed&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1183931635751563" type="Character">
+                            <param id="0" name="Instance variable">speedtimer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="7895999155977833" type="Character">
+                            <param id="0" name="Max Speed">1200</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7302736030733607" type="Speed_used">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="2936721754718433" type="Character">
+                            <param id="0" name="Instance variable">speedtimer</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="45488699267648">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="6330008714949623" type="Character">
+                            <param id="0" name="Instance variable">speedtimer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="1397902326990717" type="Keyboard">
+                            <param id="0" name="Key">86 (V)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="2765737935147613" type="Character">
+                            <param id="0" name="Instance variable">speedtimer</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="5401823054253725" type="Character">
+                            <param id="0" name="Max Speed">420</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4581862736382798" type="Speed_used">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1301346045645305" title="Destructive weapon2">
+            <sub-events>
+                <event-block sid="345774600941288">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="3187941211412293" type="Keyboard">
+                            <param id="0" name="Key">88 (X)</param>
+                        </condition>
+                        <condition id="7" name="Compare key value (as number)" sid="5164372782585951" type="WebStorage">
+                            <param id="0" name="Key">&quot;destructivo&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9275947704992255" type="Enemigo_02" />
+                        <action id="-9" name="Destroy" sid="2373605241835209" type="Enemigo_03" />
+                        <action id="-15" name="Set visible" sid="2104819532746364" type="DestructiveOnda">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="4651319329618832" type="Nightmare" />
+                        <action id="0" name="Set local value" sid="5602377398985453" type="WebStorage">
+                            <param id="0" name="Key">&quot;used&quot;</param>
+                            <param id="1" name="Value">usedTimes+1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="3318429956253459" type="MOD_DOOR">
+                            <param id="0" name="X">1480</param>
+                            <param id="1" name="Y">437</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="8629734829649126" type="WebStorage">
+                            <param id="0" name="Key">&quot;nightmare&quot;</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7828556821953144">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="1092213534698615" type="DestructiveOnda" />
+                        <condition id="-6" name="Every X seconds" sid="768626695857959" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="410232902289286" type="DestructiveOnda">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="6365976746595227" type="DestructiveOnda">
+                            <param id="0" name="Width">Self.Width + 100</param>
+                            <param id="1" name="Height">Self.Height + 100</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="3764472244692448" type="DestructiveOnda">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="6588927007186253">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6773499035496085" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="9940909984792459" type="boss_01" />
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="4965764313607419" type="boss_01">
+                    <param id="0" name="Instance variable">timealive</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6912325996400447">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="8432028817294069" type="boss_01">
+                    <param id="0" name="Instance variable">timealive</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2402170390987672" type="boss_01" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="8485517934118424" title="Nightmare Behavior">
+            <sub-events>
+                <event-block sid="7854806278014508">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="4104982953909108" type="Nightmare">
+                            <param id="0" name="Object">Character</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2088029525913334" type="boss_01">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="2680947853944272">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="6672417177726956" type="System">
+                                    <param id="0" name="Interval (seconds)">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="7640900824907931" type="Nightmare">
+                                    <param id="0" name="Object">night_bull</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="1088249637471059" type="night_bull">
+                                    <param id="0" name="Angle">random (130,180)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4892325382344329">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="8749668381190332" type="System">
+                                    <param id="0" name="Interval (seconds)">1.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="9498925580803869" type="Nightmare">
+                                    <param id="0" name="Object">night_bull</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">3</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="1666534854670855" type="night_bull">
+                                    <param id="0" name="Angle">random (100,150)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="8227526567319677">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="3465215138665721" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="4877459436369466" type="Musica" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

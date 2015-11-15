@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>NARANJA_SHEET</name>
+    <events>
+        <event-block sid="2729317288358587">
+            <conditions>
+                <condition id="2" name="Key is down" sid="8524191927898158" type="Keyboard">
+                    <param id="0" name="Key">88 (X)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="9406169947024894" type="DestructiveOnda">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="8937499167783149" type="Character">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="8533993609184857" type="Character">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3691554125895263">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5277037892289862" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="8951511597651114" type="DestructiveOnda" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="138252656351916" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

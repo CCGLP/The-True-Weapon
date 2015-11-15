@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FinalRoadSHEET</name>
+    <events>
+        <event-block sid="6618412382785122">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8572020198160067" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="9701033940270909" type="DestructiveOnda">
+                    <param id="0" name="Pin to">Character</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="5057611212320807" type="Speed_used">
+                    <param id="0" name="Pin to">Character</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="7861427005327196" type="System">
+                    <param id="0" name="Variable">usedTimes</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;used&quot;)</param>
+                </action>
+                <action id="0" name="Play" sid="2366538758222691" type="Musica">
+                    <param id="0" name="Audio file">Level2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7411986182137896">
+                    <conditions>
+                        <condition id="7" name="Compare key value (as number)" sid="6715803774034265" type="WebStorage">
+                            <param id="0" name="Key">&quot;nightmare&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="7" name="Compare key value (as number)" sid="1297526342418144" type="WebStorage">
+                            <param id="0" name="Key">&quot;Greys&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="9494388463540221" type="FinalROJA">
+                            <param id="0" name="Object">Apoyo_01</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9083234446853966">
+                    <conditions>
+                        <condition id="7" name="Compare key value (as number)" sid="1530695491412095" type="WebStorage">
+                            <param id="0" name="Key">&quot;nightmare&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="7" name="Compare key value (as number)" sid="2492461133315087" type="WebStorage">
+                            <param id="0" name="Key">&quot;Greys&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="2758542404752247" type="FinalGREYBLUE">
+                            <param id="0" name="Object">Apoyo_01</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="632889553610277">
+                    <conditions>
+                        <condition id="7" name="Compare key value (as number)" sid="8281491450437519" type="WebStorage">
+                            <param id="0" name="Key">&quot;nightmare&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="7" name="Compare key value (as number)" sid="3897709386494586" type="WebStorage">
+                            <param id="0" name="Key">&quot;Greys&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="7274284126764985" type="FinalGREYRED">
+                            <param id="0" name="Object">Apoyo_01</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4485815487682147">
+                    <conditions>
+                        <condition id="7" name="Compare key value (as number)" sid="7248212528260724" type="WebStorage">
+                            <param id="0" name="Key">&quot;nightmare&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="7" name="Compare key value (as number)" sid="6740425681272634" type="WebStorage">
+                            <param id="0" name="Key">&quot;Greys&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="7" name="Compare key value (as number)" sid="9843238744003646" type="WebStorage">
+                            <param id="0" name="Key">&quot;used&quot;</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="4883477813593607" type="FinalNARANJA">
+                            <param id="0" name="Object">Apoyo_01</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2399136133855692">
+                    <conditions>
+                        <condition id="7" name="Compare key value (as number)" sid="5639976054364057" type="WebStorage">
+                            <param id="0" name="Key">&quot;nightmare&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="7" name="Compare key value (as number)" sid="8658820455233533" type="WebStorage">
+                            <param id="0" name="Key">&quot;Greys&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="7" name="Compare key value (as number)" sid="5334513918258805" type="WebStorage">
+                            <param id="0" name="Key">&quot;used&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="5427878968985377" type="FinalAZUL">
+                            <param id="0" name="Object">Apoyo_01</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="7999247225088335" title="Speed Weapon4">
+            <sub-events>
+                <event-block sid="8475753027569736">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="4573065641670557" type="Keyboard">
+                            <param id="0" name="Key">67 (C)</param>
+                        </condition>
+                        <condition id="7" name="Compare key value (as number)" sid="5035147585088973" type="WebStorage">
+                            <param id="0" name="Key">&quot;speed&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1183931635751563" type="Character">
+                            <param id="0" name="Instance variable">speedtimer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="7895999155977833" type="Character">
+                            <param id="0" name="Max Speed">1200</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7302736030733607" type="Speed_used">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="2936721754718433" type="Character">
+                            <param id="0" name="Instance variable">speedtimer</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="45488699267648">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="6330008714949623" type="Character">
+                            <param id="0" name="Instance variable">speedtimer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="1397902326990717" type="Keyboard">
+                            <param id="0" name="Key">86 (V)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="2765737935147613" type="Character">
+                            <param id="0" name="Instance variable">speedtimer</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="5401823054253725" type="Character">
+                            <param id="0" name="Max Speed">420</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4581862736382798" type="Speed_used">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="573035987621891" title="Destructive weapon3">
+            <sub-events>
+                <event-block sid="345774600941288">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="3187941211412293" type="Keyboard">
+                            <param id="0" name="Key">88 (X)</param>
+                        </condition>
+                        <condition id="7" name="Compare key value (as number)" sid="5164372782585951" type="WebStorage">
+                            <param id="0" name="Key">&quot;destructivo&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9275947704992255" type="Enemigo_02" />
+                        <action id="-9" name="Destroy" sid="2373605241835209" type="Enemigo_03" />
+                        <action id="-15" name="Set visible" sid="2104819532746364" type="DestructiveOnda">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="5602377398985453" type="WebStorage">
+                            <param id="0" name="Key">&quot;used&quot;</param>
+                            <param id="1" name="Value">usedTimes+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7828556821953144">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="1092213534698615" type="DestructiveOnda" />
+                        <condition id="-6" name="Every X seconds" sid="768626695857959" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="410232902289286" type="DestructiveOnda">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="6365976746595227" type="DestructiveOnda">
+                            <param id="0" name="Width">Self.Width + 100</param>
+                            <param id="1" name="Height">Self.Height + 100</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="3764472244692448" type="DestructiveOnda">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="3592342985023189" title="Character related Behavior7">
+            <sub-events>
+                <event-block sid="1100063310481536">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="6589410635440764" type="Keyboard">
+                            <param id="0" name="Key">32 (Barra Espaciadora)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="7935983305885175" type="Character">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="15692287152415">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1279134647135033" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="6685716351245874" type="Character">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="7774404172941063" type="Character">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="608967119942292">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="969341495259171" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="7783940870648452" type="Character">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="9943139337417532" type="Character">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4466691427178711">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="4826701578764988" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="51073863811416" type="Character">
+                            <param id="0" name="Object">FinalAZUL</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="6457743207911809" type="System">
+                            <param id="0" name="Layout">Final_AZUL</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4659881026250229">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="2474691192794495" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="2082976479147646" type="Character">
+                            <param id="0" name="Object">FinalGREYBLUE</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="213183090459852" type="System">
+                            <param id="0" name="Layout">FINAL_GREYS_BLUE</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1252181082182807">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="3164917186403426" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="7930108768321939" type="Character">
+                            <param id="0" name="Object">FinalGREYRED</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="3676516686494022" type="System">
+                            <param id="0" name="Layout">FINAL_GREYS_RED</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2960494149354036">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1474222808389481" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="3561064477710133" type="Character">
+                            <param id="0" name="Object">FinalNARANJA</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="4832273131375557" type="System">
+                            <param id="0" name="Layout">Final_NARANJA</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="600282829940183">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1273767672829186" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="8541264877267834" type="Character">
+                            <param id="0" name="Object">FinalROJA</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="6710131786039865" type="System">
+                            <param id="0" name="Layout">Final_ROJO</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="8900187615329141">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="7030155756789473" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="5142703913149776" type="Musica" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">FINAL_GREYS_RED</layout>
+        <layout order="3">FinalRoad</layout>
+        <layout order="5">3level</layout>
+        <layout order="6">Menu</layout>
+        <layout order="7">First Level</layout>
+        <layout order="9">LevelRED</layout>
+        <layout order="10">LevelYELLOW</layout>
+        <layout order="11">LevelGREYS</layout>
+        <layout order="12">SUBYELLOWLevel</layout>
+        <layout order="13">2level</layout>
+        <layout active="1" order="15">Final_NARANJA</layout>
+        <event-sheet order="1">Level sheet 3</event-sheet>
+        <event-sheet order="2">GREYS_RED_SHEET</event-sheet>
+        <event-sheet order="4">FinalRoadSHEET</event-sheet>
+        <event-sheet order="8">RED sheet</event-sheet>
+        <event-sheet order="14">NARANJA_SHEET</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/Fondos/" />
+        <folder expanded="1" path="object-folder/Plataformas/" />
+        <folder expanded="0" path="object-folder/Bullets/" />
+        <folder expanded="1" path="object-folder/Enemigos/" />
+        <folder expanded="1" path="object-folder/Puertas/" />
+        <folder expanded="0" path="object-folder/Armas/" />
+        <folder expanded="0" path="object-folder/Dialogos/" />
+        <folder expanded="1" path="object-folder/Textosdeayuda/" />
+        <folder expanded="0" path="object-folder/Gente/" />
+        <folder expanded="0" path="object-folder/Objetos/" />
+        <folder expanded="0" path="object-folder/DialogoApoyo/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/Levels/" />
+        <folder expanded="1" path="layout-folder/Finales/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/Levels sheet/" />
+        <folder expanded="1" path="event-folder/Finales sheet/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Fondo1/" />
+        <folder expanded="1" path="animation-folder/Fondo_02/" />
+        <folder expanded="1" path="animation-folder/Fondo3/" />
+        <folder expanded="1" path="animation-folder/Fondo_RED/" />
+        <folder expanded="1" path="animation-folder/FondoYellow/" />
+        <folder expanded="1" path="animation-folder/Fondo_sub_yellow/" />
+        <folder expanded="1" path="animation-folder/FondoGris/" />
+        <folder expanded="1" path="animation-folder/Fondo_FINAL_REDS/" />
+        <folder expanded="1" path="animation-folder/Menu/" />
+        <folder expanded="1" path="animation-folder/FondoNaranja/" />
+        <folder expanded="1" path="animation-folder/FondoAZUL_GOOD/" />
+        <folder expanded="1" path="animation-folder/colision/" />
+        <folder expanded="1" path="animation-folder/Plataforma1/" />
+        <folder expanded="1" path="animation-folder/levanta_01/" />
+        <folder expanded="1" path="animation-folder/desaparece_01/" />
+        <folder expanded="1" path="animation-folder/Bullet_01/" />
+        <folder expanded="1" path="animation-folder/Bullet_02/" />
+        <folder expanded="1" path="animation-folder/night_bull/" />
+        <folder expanded="1" path="animation-folder/EnemigoIzq/" />
+        <folder expanded="1" path="animation-folder/Enemigo_02/" />
+        <folder expanded="1" path="animation-folder/Enemigo_03/" />
+        <folder expanded="1" path="animation-folder/Nightmare/" />
+        <folder expanded="1" path="animation-folder/Puerta_01/" />
+        <folder expanded="1" path="animation-folder/Puerta_02/" />
+        <folder expanded="1" path="animation-folder/Portal_RED/" />
+        <folder expanded="1" path="animation-folder/Portal_YELLOW/" />
+        <folder expanded="1" path="animation-folder/Portal_GREYS/" />
+        <folder expanded="1" path="animation-folder/MOD_DOOR/" />
+        <folder expanded="1" path="animation-folder/FinalROJA/" />
+        <folder expanded="1" path="animation-folder/FinalAZUL/" />
+        <folder expanded="1" path="animation-folder/FinalNARANJA/" />
+        <folder expanded="1" path="animation-folder/FinalGREYRED/" />
+        <folder expanded="1" path="animation-folder/FinalGREYBLUE/" />
+        <folder expanded="1" path="animation-folder/bocadillo/" />
+        <folder expanded="1" path="animation-folder/DestructiveWeapon/" />
+        <folder expanded="1" path="animation-folder/arma_speed/" />
+        <folder expanded="1" path="animation-folder/Dialogo_01/" />
+        <folder expanded="1" path="animation-folder/dialogo_saludo/" />
+        <folder expanded="1" path="animation-folder/dialogo_respuesta_01/" />
+        <folder expanded="1" path="animation-folder/convencer_01/" />
+        <folder expanded="1" path="animation-folder/tres/" />
+        <folder expanded="1" path="animation-folder/convencer_02/" />
+        <folder expanded="1" path="animation-folder/destructiveweapon_1/" />
+        <folder expanded="1" path="animation-folder/gap_01/" />
+        <folder expanded="1" path="animation-folder/coger_speed/" />
+        <folder expanded="1" path="animation-folder/boss_01/" />
+        <folder expanded="1" path="animation-folder/convencer_nightmare/" />
+        <folder expanded="1" path="animation-folder/nightmare_bueno/" />
+        <folder expanded="1" path="animation-folder/Gente_01/" />
+        <folder expanded="1" path="animation-folder/DestructiveOnda/" />
+        <folder expanded="1" path="animation-folder/llave_01/" />
+        <folder expanded="1" path="animation-folder/Spawner/" />
+        <folder expanded="1" path="animation-folder/Speed_used/" />
+        <folder expanded="1" path="animation-folder/Apoyo_01/" />
+        <folder expanded="1" path="animation-folder/Apoyo_02/" />
+        <folder expanded="1" path="animation-folder/Character/" />
+        <folder expanded="1" path="animation-folder/Muerte/" />
+    </folders-expanded>
+</c2uistate>

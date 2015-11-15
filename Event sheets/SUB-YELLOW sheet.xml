@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SUB-YELLOW sheet</name>
+    <events>
+        <event-group description="" sid="2957642107570346" title="Character related Behavior6">
+            <sub-events>
+                <event-block sid="1100063310481536">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="6589410635440764" type="Keyboard">
+                            <param id="0" name="Key">32 (Barra Espaciadora)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="7935983305885175" type="Character">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="15692287152415">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1279134647135033" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="6685716351245874" type="Character">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="7774404172941063" type="Character">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="608967119942292">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="969341495259171" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="7783940870648452" type="Character">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="9943139337417532" type="Character">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4466691427178711">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="4826701578764988" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="51073863811416" type="Character">
+                            <param id="0" name="Object">Teleporti</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="6457743207911809" type="System">
+                            <param id="0" name="Layout">LevelYELLOW</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="308433544980286">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="7789933196692139" type="Keyboard">
+                            <param id="0" name="Key">90 (Z)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="2570523821700254" type="Character">
+                            <param id="0" name="Object">Apoyo_01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1280550716413682" type="gap_01">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="3635859066609138">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="5041834193172747" type="Character">
+                    <param id="0" name="Object">arma_speed</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="2855852332503855" type="WebStorage">
+                    <param id="0" name="Key">&quot;speed&quot;</param>
+                    <param id="1" name="Value">&quot;1&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1059097756747628" type="arma_speed">
+                    <param id="0" name="Object">Teleporti</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="9116643248727679" type="Teleporti">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9855365954648046" type="arma_speed" />
+                <action id="-15" name="Set visible" sid="7539047654152038" type="coger_speed">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="7033673534006481" title="Dialogo related after spawn7">
+            <sub-events>
+                <event-block sid="456143532358093">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="6904592426452907" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="4117761144586023" type="coger_speed">
+                            <param id="0" name="X">Character.ImagePointX(1)</param>
+                            <param id="1" name="Y">Character.ImagePointY(1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7689501392132358">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="19562700769338" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="1398548239784521" type="coger_speed" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="573766324657367" type="coger_speed">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1342277635814368">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8873289424228224" type="coger_speed">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="821492665938438" type="coger_speed" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

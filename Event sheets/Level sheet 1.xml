@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level sheet 1</name>
+    <events>
+        <event-block sid="9836334345671396">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2090447328777429" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Clear local storage" sid="3814900240837582" type="WebStorage" />
+                <action id="0" name="Set local value" sid="1846248260436217" type="WebStorage">
+                    <param id="0" name="Key">&quot;destructivo&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set local value" sid="1713111964454143" type="WebStorage">
+                    <param id="0" name="Key">&quot;used&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set local value" sid="3469876421880895" type="WebStorage">
+                    <param id="0" name="Key">&quot;speed&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set local value" sid="9437694696316556" type="WebStorage">
+                    <param id="0" name="Key">&quot;Greys&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set local value" sid="5273465590444762" type="WebStorage">
+                    <param id="0" name="Key">&quot;nightmare&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="4736794930014428" type="Musica">
+                    <param id="0" name="Audio file">Level1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="3587459035065112" title="EnemyIZQBehavior">
+            <sub-events>
+                <event-block sid="6842826575110365">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="3845798947524198" type="EnemigoIzq">
+                            <param id="0" name="Object">Character</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="7694162952248345" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="614669727127523" type="EnemigoIzq">
+                            <param id="0" name="Object">Bullet_01</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="181269071088818" type="Bullet_01">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="4782002976242626" title="Character related Behavior">
+            <sub-events>
+                <event-block sid="8867301400097025">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="4697721616237324" type="Keyboard">
+                            <param id="0" name="Key">32 (Barra Espaciadora)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="7906122823138337" type="Character">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="15692287152415">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1279134647135033" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="6685716351245874" type="Character">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="7774404172941063" type="Character">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="608967119942292">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="969341495259171" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="7783940870648452" type="Character">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="9943139337417532" type="Character">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4466691427178711">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="4826701578764988" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="51073863811416" type="Character">
+                            <param id="0" name="Object">Puerta_01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="6457743207911809" type="System">
+                            <param id="0" name="Layout">2level</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2870056538225681">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="2736801855351878" type="Character">
+                            <param id="0" name="Object">bocadillo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9221554985602395" type="bocadillo" />
+                        <action id="-3" name="Set position" sid="5180911563370648" type="Puerta_01">
+                            <param id="0" name="X">1684</param>
+                            <param id="1" name="Y">173</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7038831556198966" type="Dialogo_01">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5368178191010722" type="w">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="2587347111454086" title="Dialogo related after spawn">
+            <sub-events>
+                <event-block sid="456143532358093">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="6904592426452907" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="4117761144586023" type="Dialogo_01">
+                            <param id="0" name="X">Character.ImagePointX(1)</param>
+                            <param id="1" name="Y">Character.ImagePointY(1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7689501392132358">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="19562700769338" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="1398548239784521" type="Dialogo_01" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="573766324657367" type="Dialogo_01">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1342277635814368">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8873289424228224" type="Dialogo_01">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="821492665938438" type="Dialogo_01" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="9751924655015089" title="MUERTE">
+            <sub-events>
+                <event-block sid="7622681207511635">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="4032660701024398" type="Bullet_01">
+                            <param id="0" name="Object">Character</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="7394676559946081" type="Character">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="2765197770095213" type="Character">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6817164802306748" type="Muerte">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="6630257031863266" type="System">
+                            <param id="0" name="Group name">&quot;Character related Behavior&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8679881148155732">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="2985604148837458" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="7035461344082466" type="Muerte" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="2885925175070503" type="Muerte">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9619198574835391">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9728634491157604" type="Muerte">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="9749178875596763" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="5395295851098726">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="5084375051153088" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="8045299061576269" type="Musica" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

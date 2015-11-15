@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GREYS_RED_SHEET</name>
+    <events>
+        <event-block sid="2216697643893887">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1143961603292082" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="1" name="Add object to target" sid="3924474332940636" type="Enemigo_02">
+                    <param id="0" name="Target">Character</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="9171381175014043" type="DestructiveOnda">
+                    <param id="0" name="Pin to">Character</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="8152846972266697" title="Enemigo_Torreta3">
+            <sub-events>
+                <event-block sid="7413990940024707">
+                    <conditions>
+                        <condition behavior="Turret" id="1" name="On shoot" sid="5435600279499574" type="Enemigo_02" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="2512685781421079" type="Enemigo_02">
+                            <param id="0" name="Object">Bullet_02</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1511480494918534" title="Destructive weapon5">
+            <sub-events>
+                <event-block sid="345774600941288">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="3187941211412293" type="Keyboard">
+                            <param id="0" name="Key">88 (X)</param>
+                        </condition>
+                        <condition id="7" name="Compare key value (as number)" sid="5164372782585951" type="WebStorage">
+                            <param id="0" name="Key">&quot;destructivo&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9275947704992255" type="Enemigo_02" />
+                        <action id="-9" name="Destroy" sid="2373605241835209" type="Enemigo_03" />
+                        <action id="-15" name="Set visible" sid="2104819532746364" type="DestructiveOnda">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="5602377398985453" type="WebStorage">
+                            <param id="0" name="Key">&quot;used&quot;</param>
+                            <param id="1" name="Value">usedTimes+1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="5899717975889302" type="Bullet_02" />
+                    </actions>
+                </event-block>
+                <event-block sid="7828556821953144">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="1092213534698615" type="DestructiveOnda" />
+                        <condition id="-6" name="Every X seconds" sid="768626695857959" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="410232902289286" type="DestructiveOnda">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="6365976746595227" type="DestructiveOnda">
+                            <param id="0" name="Width">Self.Width + 100</param>
+                            <param id="1" name="Height">Self.Height + 100</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="3764472244692448" type="DestructiveOnda">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2775747738556472">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="6003552565904266" type="DestructiveOnda">
+                            <param id="0" name="Instance variable">timealive</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="9953600362501073" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

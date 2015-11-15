@@ -1,0 +1,1226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>The true weapon</name>
+    <description>Ludum Dare 32 Game</description>
+    <version>1.0.0.0</version>
+    <author>ccglp</author>
+    <author-email>carlosgolfer@gmail.com</author-email>
+    <author-website>http://ccglp.itch.io</author-website>
+    <app-id>com.ccglp.whatever</app-id>
+    <unique-id>75czgf8z64ii</unique-id>
+    <saved-with-version>20402</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>900</width>
+        <height>600</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">No</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Fondos">
+            <object-type name="Fondo1" sid="6281533310335626">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6235039459311716" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Fondos\Nivel1.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Fondo_02" sid="7409552373385183">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8680216326823483" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Fondos\Nivel2.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Fondo3" sid="3694224258209298">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1551649860168148" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Fondos\Nivel3.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Fondo_RED" sid="8581637035998916">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9292771123290916" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Fondos\Nivel4.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FondoYellow" sid="8133672995193441">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4043962985473121" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Fondos\nivel5.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Fondo_sub_yellow" sid="4114815199095856">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3479367114113898" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Fondos\Yellow_SUb.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FondoGris" sid="6258131210817857">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5154481291675082" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Fondos\FondoGreys.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Fondo_FINAL_REDS" sid="6197775258489746">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3617601771127387" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Menu" sid="510003983802706">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7299289942799543" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Fondos\menu_fondo.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FondoNaranja" sid="8588107134181726">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8395929368757692" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FondoAZUL_GOOD" sid="9039561254828576">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3753560234377792" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Plataformas">
+            <object-type name="colision" sid="4698472414915543">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="2479666794244062">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3876842024093549" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ccglp\Desktop\vbc.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Plataforma1" sid="6520427735087158">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="9863802581116776">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="ShadowCaster" sid="4816064372022452">
+                        <behavior id="shadowcaster" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8982947019906456" speed="5">
+                        <frame duration="1" hotspotX="0.503856" hotspotY="0.523077" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Plataformas\images\Plataforma-1_03.png">
+                            <collision-poly>
+                                <point x="0.00771208" y="0.0461538" />
+                                <point x="0.503856" y="0.0307692" />
+                                <point x="0.994859" y="0.0769231" />
+                                <point x="0.992288" y="0.953846" />
+                                <point x="0.0128535" y="0.969231" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="levanta_01" sid="1138237468218697">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="8487537540563914">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2794347217157507" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="desaparece_01" sid="6808876836070077">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="9671540680143635">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9555649422183003" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Bullets">
+            <object-type name="Bullet_01" sid="382096250893588">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="4260029344857654">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="8219237009107842">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="982025085309397" speed="5">
+                        <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Bullets\images\Bullet-1_03.png">
+                            <collision-poly>
+                                <point x="0.257143" y="0.125" />
+                                <point x="0.514286" y="0.0833334" />
+                                <point x="0.771429" y="0.125" />
+                                <point x="0.971429" y="0.458333" />
+                                <point x="0.771429" y="0.833333" />
+                                <point x="0.514286" y="0.916667" />
+                                <point x="0.257143" y="0.833333" />
+                                <point x="0.0571429" y="0.458333" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Bullet_02" sid="4961288435284085">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="alive" sid="7600107153646639" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Bullet" sid="5984200421390795">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="9801239103198429">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5339634971269171" speed="5">
+                        <frame duration="1" hotspotX="0.545455" hotspotY="0.506494" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Bullets\images\Bullets_06.png">
+                            <collision-poly>
+                                <point x="0.363636" y="0.0519481" />
+                                <point x="0.5" y="0.025974" />
+                                <point x="0.681818" y="0.0519481" />
+                                <point x="0.954545" y="0.506494" />
+                                <point x="0.681818" y="0.961039" />
+                                <point x="0.5" y="0.987013" />
+                                <point x="0.363636" y="0.961039" />
+                                <point x="0.0909091" y="0.506494" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="night_bull" sid="6498840604753373">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="4747224557485777">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="9516653142302646">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4277994556037774" speed="5">
+                        <frame duration="1" hotspotX="0.448598" hotspotY="0.527778" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Bullets\images\Bullets_03.png">
+                            <collision-poly>
+                                <point x="0.00934579" y="0.5" />
+                                <point x="0.439252" y="0.25" />
+                                <point x="0.962617" y="0.25" />
+                                <point x="0.990654" y="0.527778" />
+                                <point x="0.953271" y="0.777778" />
+                                <point x="0.439252" y="0.777778" />
+                                <point x="0.00934579" y="0.555556" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Enemigos">
+            <object-type name="EnemigoIzq" sid="2044535901246546">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LineOfSight" sid="8548177770277028">
+                        <behavior id="LOS" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9975926941545026" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.547368" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Enemigos\images\Enemigo1izq_03.png">
+                            <image-point name="Imagepoint 1" x="0.0384615" y="0.515789" />
+                            <collision-poly>
+                                <point x="0.153846" y="0.178947" />
+                                <point x="0.509615" y="0.0105263" />
+                                <point x="0.875" y="0.178947" />
+                                <point x="0.980769" y="0.547368" />
+                                <point x="0.826923" y="0.863158" />
+                                <point x="0.509615" y="0.978947" />
+                                <point x="0.221154" y="0.842105" />
+                                <point x="0.0192308" y="0.547368" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Enemigo_02" sid="3720911866248733">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Turret" sid="2235188178231161">
+                        <behavior id="Turret" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5968541110114635" speed="5">
+                        <frame duration="1" hotspotX="0.274194" hotspotY="0.473333" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Enemigos\images\Enemigo_02.png">
+                            <collision-poly>
+                                <point x="0.0322581" y="0.226667" />
+                                <point x="0.489247" y="0.06" />
+                                <point x="0.849462" y="0.353333" />
+                                <point x="0.892473" y="0.54" />
+                                <point x="0.833333" y="0.713333" />
+                                <point x="0.489247" y="0.946667" />
+                                <point x="0.155914" y="0.706667" />
+                                <point x="0.0537634" y="0.54" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Enemigo_03" sid="8658388644121739">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LineOfSight" sid="6925513322308061">
+                        <behavior id="LOS" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1446852414422162" speed="5">
+                        <frame duration="1" hotspotX="0.490385" hotspotY="0.547368" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Enemigos\images\Enemigo1izq_05.png">
+                            <collision-poly>
+                                <point x="0.125" y="0.178947" />
+                                <point x="0.480769" y="0.0105263" />
+                                <point x="0.846154" y="0.178947" />
+                                <point x="0.980769" y="0.547368" />
+                                <point x="0.778846" y="0.842105" />
+                                <point x="0.480769" y="0.978947" />
+                                <point x="0.173077" y="0.863158" />
+                                <point x="0.0192308" y="0.547368" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Nightmare" sid="7016781895623705">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LineOfSight" sid="3687639652203509">
+                        <behavior id="LOS" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7408682847222955" speed="5">
+                        <frame duration="1" hotspotX="0.524887" hotspotY="0.519231" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Gente\images\Gente_01_03.png">
+                            <image-point name="Imagepoint 1" x="0.411765" y="0.935897" />
+                            <image-point name="Imagepoint 2" x="0.235294" y="0.701923" />
+                            <image-point name="Imagepoint 3" x="0.230769" y="0.352564" />
+                            <collision-poly>
+                                <point x="0.0995475" y="0.0576923" />
+                                <point x="0.520362" y="0.0641026" />
+                                <point x="0.895928" y="0.516026" />
+                                <point x="0.746606" y="0.833333" />
+                                <point x="0.520362" y="0.996795" />
+                                <point x="0.339367" y="0.804487" />
+                                <point x="0.131222" y="0.516026" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Puertas">
+            <object-type name="Puerta_01" sid="6231847691568963">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3854431199790978" speed="5">
+                        <frame duration="1" hotspotX="0.51462" hotspotY="0.471483" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\ObjetosFondo\images\Puerta_1.png">
+                            <collision-poly>
+                                <point x="0.169591" y="0.171103" />
+                                <point x="0.511696" y="0.00380228" />
+                                <point x="0.830409" y="0.205323" />
+                                <point x="0.98538" y="0.935361" />
+                                <point x="0.511696" y="0.992395" />
+                                <point x="0.00584795" y="0.980989" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Puerta_02" sid="2918036058369335">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9816766537194323" speed="5">
+                        <frame duration="1" hotspotX="0.51462" hotspotY="0.471483" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\ObjetosFondo\images\Puerta_04.png">
+                            <collision-poly>
+                                <point x="0.169591" y="0.171103" />
+                                <point x="0.511696" y="0.00380228" />
+                                <point x="0.830409" y="0.205323" />
+                                <point x="0.98538" y="0.935361" />
+                                <point x="0.511696" y="0.992395" />
+                                <point x="0.00584795" y="0.980989" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Portal_RED" sid="6433089817383066">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4579707346272867" speed="5">
+                        <frame duration="1" hotspotX="0.479554" hotspotY="0.511628" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\ObjetosFondo\images\Portales_03.png">
+                            <collision-poly>
+                                <point x="0.0966543" y="0.182171" />
+                                <point x="0.475836" y="0.00775194" />
+                                <point x="0.806691" y="0.236434" />
+                                <point x="0.988848" y="0.511628" />
+                                <point x="0.810409" y="0.790698" />
+                                <point x="0.475836" y="0.992248" />
+                                <point x="0.130112" y="0.806202" />
+                                <point x="0.00371747" y="0.511628" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Portal_YELLOW" sid="3698374727947147">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2756394130951267" speed="5">
+                        <frame duration="1" hotspotX="0.319885" hotspotY="0.501818" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\ObjetosFondo\images\Portales_10.png">
+                            <collision-poly>
+                                <point x="0" y="0.245794" />
+                                <point x="0.318832" y="0" />
+                                <point x="0.817554" y="0.225137" />
+                                <point x="1" y="0.501938" />
+                                <point x="0.836735" y="0.799396" />
+                                <point x="0.318832" y="1" />
+                                <point x="0" y="0.745688" />
+                                <point x="0" y="0.501938" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Portal_GREYS" sid="2712440372764504">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5499587599486218" speed="5">
+                        <frame duration="1" hotspotX="0.501502" hotspotY="0.5" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\ObjetosFondo\images\Portales_05.png">
+                            <collision-poly>
+                                <point x="0.234234" y="0.267123" />
+                                <point x="0.498498" y="0.0342466" />
+                                <point x="0.825826" y="0.19863" />
+                                <point x="0.981982" y="0.5" />
+                                <point x="0.807808" y="0.780822" />
+                                <point x="0.498498" y="0.886986" />
+                                <point x="0.267267" y="0.695205" />
+                                <point x="0.201201" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MOD_DOOR" sid="352446617209747">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4816234114540988" speed="5">
+                        <frame duration="1" hotspotX="0.51462" hotspotY="0.471483" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\ObjetosFondo\images\Puerta_MOD.png">
+                            <collision-poly>
+                                <point x="0.169591" y="0.171103" />
+                                <point x="0.511696" y="0.00380228" />
+                                <point x="0.827485" y="0.209125" />
+                                <point x="0.98538" y="0.935361" />
+                                <point x="0.511696" y="0.992395" />
+                                <point x="0.00584795" y="0.980989" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FinalROJA" sid="7671327129324211">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8019179362933391" speed="5">
+                        <frame duration="1" hotspotX="0.51462" hotspotY="0.471483" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\ObjetosFondo\images\Puerta_final_RED.png">
+                            <collision-poly>
+                                <point x="0.169591" y="0.171103" />
+                                <point x="0.511696" y="0.00380228" />
+                                <point x="0.830409" y="0.205323" />
+                                <point x="0.98538" y="0.935361" />
+                                <point x="0.511696" y="0.992395" />
+                                <point x="0.00584795" y="0.980989" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FinalAZUL" sid="4928873452148147">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3696606149958341" speed="5">
+                        <frame duration="1" hotspotX="0.51462" hotspotY="0.471483" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\ObjetosFondo\images\Puerta_FINAL_BLUE.png">
+                            <collision-poly>
+                                <point x="0.169591" y="0.171103" />
+                                <point x="0.511696" y="0.00380228" />
+                                <point x="0.830409" y="0.205323" />
+                                <point x="0.98538" y="0.935361" />
+                                <point x="0.511696" y="0.992395" />
+                                <point x="0.00584795" y="0.980989" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FinalNARANJA" sid="411529865891067">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1762594225337926" speed="5">
+                        <frame duration="1" hotspotX="0.51462" hotspotY="0.471483" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\ObjetosFondo\images\Puerta_final_ORANGE.png">
+                            <collision-poly>
+                                <point x="0.169591" y="0.171103" />
+                                <point x="0.511696" y="0.00380228" />
+                                <point x="0.830409" y="0.205323" />
+                                <point x="0.98538" y="0.935361" />
+                                <point x="0.511696" y="0.992395" />
+                                <point x="0.00584795" y="0.980989" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FinalGREYRED" sid="9341353500339238">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5221185663377475" speed="5">
+                        <frame duration="1" hotspotX="0.51462" hotspotY="0.471483" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\ObjetosFondo\images\Puerta_FINAL_GREY_RED.png">
+                            <collision-poly>
+                                <point x="0.169591" y="0.171103" />
+                                <point x="0.511696" y="0.00380228" />
+                                <point x="0.830409" y="0.205323" />
+                                <point x="0.98538" y="0.935361" />
+                                <point x="0.511696" y="0.992395" />
+                                <point x="0.00584795" y="0.980989" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FinalGREYBLUE" sid="3444849205410851">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4924707563334276" speed="5">
+                        <frame duration="1" hotspotX="0.51462" hotspotY="0.471483" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\ObjetosFondo\images\Puerta_FINAL_GREY_BLUE.png">
+                            <collision-poly>
+                                <point x="0.169591" y="0.171103" />
+                                <point x="0.511696" y="0.00380228" />
+                                <point x="0.830409" y="0.205323" />
+                                <point x="0.98538" y="0.935361" />
+                                <point x="0.511696" y="0.992395" />
+                                <point x="0.00584795" y="0.980989" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Armas">
+            <object-type name="bocadillo" sid="6103687027766726">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1991711744729222" speed="5">
+                        <frame duration="1" hotspotX="0.498701" hotspotY="0.506667" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Armas\bocadillo1.png">
+                            <collision-poly>
+                                <point x="0.116883" y="0.15" />
+                                <point x="0.496104" y="0.00333333" />
+                                <point x="0.872727" y="0.156667" />
+                                <point x="0.994805" y="0.506667" />
+                                <point x="0.820779" y="0.79" />
+                                <point x="0.496104" y="0.88" />
+                                <point x="0.18961" y="0.77" />
+                                <point x="0.0103896" y="0.506667" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="DestructiveWeapon" sid="7719494267819036">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4668324199630661" speed="5">
+                        <frame duration="1" hotspotX="0.471338" hotspotY="0.554913" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Armas\images\DestructiveWeapon_03.png">
+                            <collision-poly>
+                                <point x="0.089172" y="0.231214" />
+                                <point x="0.464968" y="0.0924855" />
+                                <point x="0.847134" y="0.231214" />
+                                <point x="0.987261" y="0.554913" />
+                                <point x="0.834395" y="0.867052" />
+                                <point x="0.464968" y="0.988439" />
+                                <point x="0.133758" y="0.83815" />
+                                <point x="0.00636943" y="0.554913" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="arma_speed" sid="607010520296407">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2619158443726699" speed="5">
+                        <frame duration="1" hotspotX="0.544643" hotspotY="0.484615" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Armas\images\velocidad_03.png">
+                            <collision-poly>
+                                <point x="0.107143" y="0.130769" />
+                                <point x="0.535714" y="0.0384615" />
+                                <point x="0.883928" y="0.207692" />
+                                <point x="0.982143" y="0.484615" />
+                                <point x="0.821429" y="0.707692" />
+                                <point x="0.535714" y="0.969231" />
+                                <point x="0.0892857" y="0.853846" />
+                                <point x="0.0535714" y="0.484615" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Dialogos">
+            <object-type name="Dialogo_01" sid="7224492340483924">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="timealive" sid="719502632176189" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="875648812000318" speed="5">
+                        <frame duration="1" hotspotX="0.116883" hotspotY="0.996667" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Dialogos\CogerBocadillo.png">
+                            <collision-poly>
+                                <point x="0.116883" y="0.15" />
+                                <point x="0.496104" y="0.00333333" />
+                                <point x="0.872727" y="0.156667" />
+                                <point x="0.994805" y="0.506667" />
+                                <point x="0.820779" y="0.79" />
+                                <point x="0.496104" y="0.88" />
+                                <point x="0.18961" y="0.77" />
+                                <point x="0.0103896" y="0.506667" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="dialogo_saludo" sid="3950951176233759">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="timealive" sid="9250340764727802" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1779854836846629" speed="5">
+                        <frame duration="1" hotspotX="0.21147" hotspotY="0.907285" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Dialogos\images\bocadillosaludo_03.png">
+                            <collision-poly>
+                                <point x="0.121864" y="0.225166" />
+                                <point x="0.498208" y="0.0264901" />
+                                <point x="0.88172" y="0.218543" />
+                                <point x="0.939068" y="0.496689" />
+                                <point x="0.835125" y="0.695364" />
+                                <point x="0.498208" y="0.807947" />
+                                <point x="0.179211" y="0.668874" />
+                                <point x="0.0824373" y="0.496689" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="dialogo_respuesta_01" sid="5780655096191087">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2465941137175038" speed="5">
+                        <frame duration="1" hotspotX="0.498701" hotspotY="0.506667" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Dialogos\answerbocadillo_01.png">
+                            <collision-poly>
+                                <point x="0.116883" y="0.15" />
+                                <point x="0.496104" y="0.00333333" />
+                                <point x="0.872727" y="0.156667" />
+                                <point x="0.994805" y="0.506667" />
+                                <point x="0.820779" y="0.79" />
+                                <point x="0.496104" y="0.88" />
+                                <point x="0.18961" y="0.77" />
+                                <point x="0.0103896" y="0.506667" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="convencer_01" sid="7624711666734711">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="timealive" sid="9849888420847198" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5126547414650141" speed="5">
+                        <frame duration="1" hotspotX="0.105431" hotspotY="0.972678" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Dialogos\convencer_bocadillo.png">
+                            <collision-poly>
+                                <point x="0.13738" y="0.136612" />
+                                <point x="0.488818" y="0.00546448" />
+                                <point x="0.846645" y="0.131148" />
+                                <point x="0.990415" y="0.52459" />
+                                <point x="0.785942" y="0.814208" />
+                                <point x="0.488818" y="0.879781" />
+                                <point x="0.210863" y="0.786885" />
+                                <point x="0.0159744" y="0.52459" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="tres" sid="1517082911545256">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1773536840945558" speed="5">
+                        <frame duration="1" hotspotX="0.469298" hotspotY="0.656716" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Dialogos\contestacion_01.png">
+                            <collision-poly>
+                                <point x="0.0526316" y="0.246269" />
+                                <point x="0.464912" y="0.00746269" />
+                                <point x="0.907895" y="0.201493" />
+                                <point x="0.938596" y="0.656716" />
+                                <point x="0.741228" y="0.828358" />
+                                <point x="0.464912" y="0.873134" />
+                                <point x="0.219298" y="0.783582" />
+                                <point x="0.0833333" y="0.656716" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="convencer_02" sid="4245863623615804">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="timealive" sid="8690258952029494" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8518347075512228" speed="5">
+                        <frame duration="1" hotspotX="0.0597403" hotspotY="0.00333333" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Dialogos\friends.png">
+                            <collision-poly>
+                                <point x="0.116883" y="0.15" />
+                                <point x="0.496104" y="0.00333333" />
+                                <point x="0.872727" y="0.156667" />
+                                <point x="0.994805" y="0.506667" />
+                                <point x="0.820779" y="0.79" />
+                                <point x="0.496104" y="0.88" />
+                                <point x="0.18961" y="0.77" />
+                                <point x="0.0103896" y="0.506667" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="destructiveweapon_1" sid="3025447893782522">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="timealive" sid="8694138702174884" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5873080870724777" speed="5">
+                        <frame duration="1" hotspotX="0.0909091" hotspotY="0.983333" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Dialogos\weapon_01.png">
+                            <collision-poly>
+                                <point x="0.116883" y="0.15" />
+                                <point x="0.496104" y="0.00333333" />
+                                <point x="0.872727" y="0.156667" />
+                                <point x="0.994805" y="0.506667" />
+                                <point x="0.820779" y="0.79" />
+                                <point x="0.496104" y="0.88" />
+                                <point x="0.18961" y="0.77" />
+                                <point x="0.0103896" y="0.506667" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="gap_01" sid="8134219385384502">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="timealive" sid="2842869600734566" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6826966071014128" speed="5">
+                        <frame duration="1" hotspotX="0.116071" hotspotY="0.971591" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Dialogos\gap_01.png">
+                            <collision-poly>
+                                <point x="0.047619" y="0.244318" />
+                                <point x="0.511905" y="0.00568182" />
+                                <point x="0.958333" y="0.284091" />
+                                <point x="0.282738" y="0.909091" />
+                                <point x="0.610119" y="0.869318" />
+                                <point x="0.511905" y="0.880682" />
+                                <point x="0.419643" y="0.863636" />
+                                <point x="0.193452" y="0.909091" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="coger_speed" sid="3532383070688225">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="timealive" sid="5877146949054441" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9601458004734801" speed="5">
+                        <frame duration="1" hotspotX="0.116883" hotspotY="0.983333" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Dialogos\coger_speed.png">
+                            <collision-poly>
+                                <point x="0.116883" y="0.15" />
+                                <point x="0.496104" y="0.00333333" />
+                                <point x="0.872727" y="0.156667" />
+                                <point x="0.994805" y="0.506667" />
+                                <point x="0.820779" y="0.79" />
+                                <point x="0.496104" y="0.88" />
+                                <point x="0.18961" y="0.77" />
+                                <point x="0.0103896" y="0.506667" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="boss_01" sid="5182508881559903">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="timealive" sid="1828981155698323" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1883818894791036" speed="5">
+                        <frame duration="1" hotspotX="0.479905" hotspotY="0.49848" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Dialogos\nightmare_01.png">
+                            <collision-poly>
+                                <point x="0.122931" y="0.161094" />
+                                <point x="0.477541" y="0.00303951" />
+                                <point x="0.86052" y="0.12766" />
+                                <point x="0.990544" y="0.49848" />
+                                <point x="0.794326" y="0.784195" />
+                                <point x="0.477541" y="0.881459" />
+                                <point x="0.165485" y="0.781155" />
+                                <point x="0.00472813" y="0.49848" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="convencer_nightmare" sid="5844677085914441">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="timealive" sid="2849134753014362" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8762769836621833" speed="5">
+                        <frame duration="1" hotspotX="0.122449" hotspotY="0.991713" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Dialogos\nightmare_convencer.png">
+                            <collision-poly>
+                                <point x="0.120181" y="0.146409" />
+                                <point x="0.498866" y="0.00276243" />
+                                <point x="0.873016" y="0.154696" />
+                                <point x="0.995465" y="0.5" />
+                                <point x="0.825397" y="0.787293" />
+                                <point x="0.498866" y="0.881215" />
+                                <point x="0.188209" y="0.770718" />
+                                <point x="0.00907029" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="nightmare_bueno" sid="1406309155216389">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1817545833812129" speed="5">
+                        <frame duration="1" hotspotX="0.880682" hotspotY="0.978102" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Dialogos\nightmare_02.png">
+                            <collision-poly>
+                                <point x="0.0965909" y="0.193431" />
+                                <point x="0.525568" y="0.00364964" />
+                                <point x="0.9375" y="0.218978" />
+                                <point x="0.954545" y="0.60219" />
+                                <point x="0.784091" y="0.788321" />
+                                <point x="0.525568" y="0.875912" />
+                                <point x="0.241477" y="0.824818" />
+                                <point x="0.03125" y="0.60219" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Textosdeayuda">
+            <object-type name="textoayuda_01" sid="7326442680096639">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="w" sid="4092129855295542">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="destructivoayuda" sid="4660905637422808">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Ayuda_speed" sid="7785539106769613">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Truth_01" sid="3996582659046541">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Truth_02" sid="8732242700836777">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Truth_03" sid="2260561544932311">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Truth_04" sid="2186049957162138">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Truth_00" sid="3752869789056287">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Red_Final_01" sid="1301522042769189">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Orange_Final_01" sid="4090896638341783">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="FinalAZUL_02" sid="5686094482914858">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text" sid="210366888577352">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text2" sid="7680310835136173">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Menu_Text" sid="9849665628773124">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Pista_Z" sid="9960768777793431">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Gente">
+            <object-type name="Gente_01" sid="1693638522146982">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6166251004104599" speed="5">
+                        <frame duration="1" hotspotX="0.631769" hotspotY="0.515957" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Gente\images\Gente_01_03.png">
+                            <collision-poly>
+                                <point x="0.0995475" y="0.0576923" />
+                                <point x="0.520362" y="0.0641026" />
+                                <point x="0.895928" y="0.516026" />
+                                <point x="0.746606" y="0.833333" />
+                                <point x="0.520362" y="0.996795" />
+                                <point x="0.339367" y="0.804487" />
+                                <point x="0.131222" y="0.516026" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Objetos">
+            <object-type name="Teleporti" sid="7027651910586619">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+            <object-type name="Fire" sid="7337746837695886">
+                <plugin id="Particles" />
+                <texture original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Objetos_Random\Fuego.png" />
+            </object-type>
+            <object-type name="DestructiveOnda" sid="9809035543767751">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="timealive" sid="6873646022577244" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Pin" sid="6667779393043914">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7667043079657949" speed="5">
+                        <frame duration="1" hotspotX="0.542553" hotspotY="0.515957" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Objetos_Random\images\destructive_use_02.png">
+                            <collision-poly>
+                                <point x="0.0585106" y="0.297872" />
+                                <point x="0.537234" y="0.0106383" />
+                                <point x="0.968085" y="0.351064" />
+                                <point x="0.994681" y="0.515957" />
+                                <point x="0.962766" y="0.675532" />
+                                <point x="0.537234" y="0.989362" />
+                                <point x="0.0638298" y="0.728723" />
+                                <point x="0.0106383" y="0.515957" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="llave_01" sid="1818973710957679">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2739242973133433" speed="5">
+                        <frame duration="1" hotspotX="0.491228" hotspotY="0.52381" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Objetos_Random\images\Llave_01_03.png">
+                            <collision-poly>
+                                <point x="0.242105" y="0.205128" />
+                                <point x="0.487719" y="0.029304" />
+                                <point x="0.8" y="0.139194" />
+                                <point x="0.691228" y="0.791209" />
+                                <point x="0.487719" y="0.930403" />
+                                <point x="0.196491" y="0.886447" />
+                                <point x="0.00350877" y="0.520147" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AlmostDead_Teleport" sid="3863106400664446">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+            <object-type name="Spawner" sid="2910854504776194">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9240757868196389" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="0.012" y="0.472" />
+                            <image-point name="Imagepoint 2" x="0.996" y="0.492" />
+                            <image-point name="Imagepoint 3" x="0.736" y="0.508" />
+                            <image-point name="Imagepoint 4" x="0.244" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Speed_used" sid="3022040824596065">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="8407064506647422">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4678652962908802" speed="5">
+                        <frame duration="1" hotspotX="0.495726" hotspotY="0.486842" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Objetos_Random\images\Speed_used_03.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="DialogoApoyo">
+            <object-type name="Apoyo_01" sid="85973458136933">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1306681424113959" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Apoyo_02" sid="9402446611746212">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4007497727531389" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="Character" sid="4734004669163141">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="speedtimer" sid="2602933022108726" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="1863334608348478">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="9932135653445605">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2169317699709648" speed="5">
+                    <frame duration="1" hotspotX="0.375" hotspotY="0.466667" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\Personaje\images\Personaje_Principal_03.png">
+                        <image-point name="Imagepoint 1" x="0.682692" y="0.0555556" />
+                        <image-point name="Imagepoint 2" x="0.875" y="0.988889" />
+                        <collision-poly>
+                            <point x="0.194808" y="0.0848073" />
+                            <point x="0.5" y="0.0259637" />
+                            <point x="0.5" y="0.681407" />
+                            <point x="0.661371" y="0.844444" />
+                            <point x="0.358696" y="0.844444" />
+                            <point x="0.194816" y="0.526304" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="2790193289910033">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Muerte" sid="4351862516552863">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="timealive" sid="1071260357900145" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9086577876867593" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ccglp\Desktop\LudumDare Game- 32\Imagenes\ObjetosFondo\Died.png">
+                        <collision-poly>
+                            <point x="0.0455556" y="0.0683333" />
+                            <point x="0.5" y="0.538333" />
+                            <point x="0.578889" y="0.631667" />
+                            <point x="0.878889" y="0.5" />
+                            <point x="0.866667" y="0.8" />
+                            <point x="0.5" y="0.88" />
+                            <point x="0.215556" y="0.676667" />
+                            <point x="0.218889" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WebStorage" sid="1622189251860901">
+            <plugin id="WebStorage" />
+        </object-type>
+        <object-type name="Musica" sid="9795842206038569">
+            <plugin id="Audio" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout-folder name="Levels">
+            <layout>First Level.xml</layout>
+            <layout>2level.xml</layout>
+            <layout>3level.xml</layout>
+            <layout>LevelRED.xml</layout>
+            <layout>LevelYELLOW.xml</layout>
+            <layout>SUBYELLOWLevel.xml</layout>
+            <layout>LevelGREYS.xml</layout>
+            <layout>FinalRoad.xml</layout>
+        </layout-folder>
+        <layout-folder name="Finales">
+            <layout>Final_ROJO.xml</layout>
+            <layout>Final_AZUL.xml</layout>
+            <layout>Final_NARANJA.xml</layout>
+            <layout>FINAL_GREYS_RED.xml</layout>
+            <layout>FINAL_GREYS_BLUE.xml</layout>
+        </layout-folder>
+        <layout>Menu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-folder name="Levels sheet">
+            <event-sheet>Level sheet 1.xml</event-sheet>
+            <event-sheet>Level sheet 2.xml</event-sheet>
+            <event-sheet>Level sheet 3.xml</event-sheet>
+            <event-sheet>RED sheet.xml</event-sheet>
+            <event-sheet>YELLOW sheet.xml</event-sheet>
+            <event-sheet>SUB-YELLOW sheet.xml</event-sheet>
+            <event-sheet>GREYS_SHEET.xml</event-sheet>
+            <event-sheet>FinalRoadSHEET.xml</event-sheet>
+        </event-folder>
+        <event-folder name="Finales sheet">
+            <event-sheet>ROJO_SHEET.xml</event-sheet>
+            <event-sheet>AZUL_SHEET.xml</event-sheet>
+            <event-sheet>NARANJA_SHEET.xml</event-sheet>
+            <event-sheet>GREYS_RED_SHEET.xml</event-sheet>
+            <event-sheet>GREYS_BLUE_SHEET.xml</event-sheet>
+        </event-folder>
+        <event-sheet>Menu sheet.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="6" />
+        <global-instance type="WebStorage" uid="72" />
+        <global-instance type="Musica" uid="112">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder>
+        <file name="Level1.ogg" />
+        <file name="FinalLevel.ogg" />
+        <file name="Level2.ogg" />
+        <file name="Level3.ogg" />
+        <file name="Level4.ogg" />
+        <file name="LevelYellow.ogg" />
+        <file name="TrueLevel2.ogg" />
+        <file name="GreysSound.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
